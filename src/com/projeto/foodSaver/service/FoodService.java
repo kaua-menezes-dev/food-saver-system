@@ -33,4 +33,16 @@ public class FoodService {
             System.out.println("It's impossible to show an empty list");
         }
     }
+
+    public Food searchFood(String name) {
+        return repository.findByName(name);
+    }
+
+    public void updateFoodQuantity(String name, int quantity) {
+        repository.updateQuantity(name, quantity);
+    }
+
+    public void removeFood(String name) {
+        repository.removeFood(name);
+    }
 }
