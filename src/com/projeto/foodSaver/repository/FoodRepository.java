@@ -39,4 +39,9 @@ public class FoodRepository {
             foods.remove(foodToRemove);
         }
     }
+
+    public void saveFood(Food food) {
+        foods.add(food);
+    }
+
 }
