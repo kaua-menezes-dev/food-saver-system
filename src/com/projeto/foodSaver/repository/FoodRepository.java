@@ -17,4 +17,12 @@ public class FoodRepository {
 
         return null;
     }
+
+    public void updateQuantity(String name, int quantity) {
+        for (Food food : foods) {
+            if (food.getName().equalsIgnoreCase(name)) {
+                food.setQuantity(quantity);
+            }
+        }
+    }
 }
