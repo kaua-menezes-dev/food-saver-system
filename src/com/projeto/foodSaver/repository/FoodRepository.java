@@ -25,4 +25,18 @@ public class FoodRepository {
             }
         }
     }
+
+    public void removeFood(String name) {
+        Food foodToRemove = null;
+
+        for (Food food : foods) {
+            if (food.getName().equalsIgnoreCase(name)) {
+                foodToRemove = food;
+            }
+        }
+
+        if (foodToRemove != null) {
+            foods.remove(foodToRemove);
+        }
+    }
 }
