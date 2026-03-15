@@ -45,14 +45,14 @@ Nenhum framework ou biblioteca externa foi utilizado.
 
 ## Estrutura do Projeto
 
-# model
+model
 
 Contém as entidades do sistema.
 Exemplo:
 
 Food → representa um alimento com nome, categoria e quantidade.
 
-# repository
+repository
 
 Responsável pelo armazenamento e manipulação dos dados, simulando um banco de dados utilizando uma lista (ArrayList).
 
@@ -64,11 +64,11 @@ atualizar quantidade;
 remover alimentos;
 listar alimentos;
 
-# service
+service
 
 Contém a lógica de negócio do sistema, a camada de serviço faz a comunicação entre o menu do usuário e o repositório de dados.
 
-# main
+main
 
 Contém a classe responsável pela execução do programa e interação com o usuário, aqui está localizado o menu interativo do sistema.
 
