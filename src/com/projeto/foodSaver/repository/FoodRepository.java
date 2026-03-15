@@ -44,4 +44,11 @@ public class FoodRepository {
         foods.add(food);
     }
 
+    public List<Food> listAllFood() {
+        if (foods.isEmpty()) {
+            return null;
+        }
+
+        return foods;
+    }
 }
